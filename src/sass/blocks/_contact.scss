@@ -1,0 +1,91 @@
+.contact {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__info {
+        background: #282828;
+        height: 80%;
+        padding-top: 30px;
+    }
+    &__social {
+        margin: 0 auto;
+        width: 250px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &__item {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    &__menu {
+        margin-top: 20px;
+        text-align: center;
+        &-item {
+            position: relative;
+            margin: 0 10px;
+            color:$text-color;
+            font-size: 22px;
+            font-weight: 500;
+            text-decoration: none;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -15px;
+                width: 6px;
+                height: 6px;
+                background: #5c9738;
+                border-radius: 100%;
+            }
+            &:nth-child(1) {
+                &::before {
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &__details {
+        width: 350px;
+        margin: 19px auto 0 auto;
+        text-align: center;
+        &__item {
+            color: $text-color;
+            a {
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+
+    }
+
+    #location {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            background: url('../../icons/maps-and-flags.png') center center/cover no-repeat;
+        }
+    }
+
+    &__footer {
+        height: 20%;
+        text-align: center;
+        line-height: 60px;
+        background: #5c9738;
+        span {
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+}

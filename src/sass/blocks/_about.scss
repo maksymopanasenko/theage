@@ -1,0 +1,67 @@
+.about {
+    padding: 90px 0 60px 0;
+    // background: url('../../img/bg/forest.jpg') center (center/cover) no-repeat;
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+        width: 600px;
+    }
+    &__descr {
+        margin-top: 50px;
+    }
+    &__picture {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 40px;
+    }
+    &__text {
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+        color: #000;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-top: 70px;
+        text-align: center;
+        font-size: 30px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 15px;
+    }
+    &__column {
+        min-height: 180px;
+        width: 440px;
+        background: rgba(170, 171, 159, 0.621);
+        padding: 10px 10px 10px 45px;
+        border-radius: 20px;
+        margin: 0;
+        &-item {
+            position: relative;
+            margin: 15px 0;
+            font-size: 24px;
+            line-height: 30px;
+            list-style: none;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 6px;
+                left: -30px;
+                width: 15px;
+                height: 15px;
+                background: url('../../icons/fossil.png') center (center/cover) no-repeat;
+            }
+        }
+    }
+}
+
+.divider {
+    width: 150px;
+    height: 2px;
+    background: rgb(128, 12, 12);
+    margin: 35px auto;
+}

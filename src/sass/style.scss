@@ -1,0 +1,34 @@
+@import 'libs/bootstrap-reboot.min.css';
+@import 'libs/slick.css';
+
+
+@import 'base/mixins.scss';
+@import 'base/variables.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(88, 105, 94);
+    // background: url('../img/bg/jurassicforest.jpg') top (center/cover) no-repeat;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/about';
+@import 'blocks/division';
+@import 'blocks/herbivorous';
+@import 'blocks/area';
+@import 'blocks/contact';
+
+

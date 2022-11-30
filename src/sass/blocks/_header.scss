@@ -1,0 +1,32 @@
+.header {
+    position: absolute;
+    z-index: 3;
+    max-height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    &__logo {
+        width: 200px;
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+    &__menu {
+        width: 580px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-item {
+            font-size: 26px;
+            font-weight: 500;
+            color: $text_color;            text-decoration: none;
+            transition: .3s ease;
+            &:hover {
+                color: rgb(234, 240, 177);
+                transform: scale(1.09);
+            }
+        }
+    }
+}
