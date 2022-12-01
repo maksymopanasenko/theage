@@ -12,10 +12,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    background: rgb(88, 105, 94);
-    // background: url('../img/bg/jurassicforest.jpg') top (center/cover) no-repeat;
-}
 
 .container {
     width: 980px;
@@ -23,12 +19,15 @@ body {
 }
 
 @import 'blocks/title';
+@import 'blocks/figure';
+
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/about';
 @import 'blocks/division';
-@import 'blocks/herbivorous';
+@import 'blocks/dinosaurs';
 @import 'blocks/area';
 @import 'blocks/contact';
+@import 'blocks/tickets';
 
 

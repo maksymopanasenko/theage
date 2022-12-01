@@ -1,19 +1,21 @@
 .area {
-    padding: 90px 0 50px 0;
-    background: #91a090;
+    padding: 60px 0 50px 0;
+    background: rgb(67,67,67);
+    background: linear-gradient(194deg, rgba(67,67,67,1) 0%, rgba(106,101,97,1) 100%);
     &__text {
         margin-top: 40px;
         text-align: center;
         font-size: 16px;
         font-weight: 500;
         line-height: 30px;
+        color: $text-color;
     }
     &__wrapper {
         margin: 50px auto 0 auto;;
         width: 800px;
     }
     &__item {
-        height: 350px;
+        min-height: 450px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -24,8 +26,7 @@
             font-size: 24px;
         }  
         img {
-            height: 310px;
-            width: 69%;
+            width: 90%;
             border-radius: 20px;
         }
     }

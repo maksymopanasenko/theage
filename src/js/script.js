@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.herbivorous__wrapper').slick({
+    $('.dinosaurs__wrapper').slick({
         dots: true,
         speed: 1200,
         adaptiveHeight: true,
@@ -11,7 +11,7 @@ $(document).ready(function(){
     $('ul.tab-list').on('click', 'li:not(.tab-item_active)', function() {
         $(this)
           .addClass('tab-item_active').siblings().removeClass('tab-item_active')
-          .closest('div.tab').find('div.herbivorous__wrapper').toggleClass('wrapper_active');
+          .closest('div.tab').find('div.dinosaurs__wrapper').toggleClass('wrapper_active');
     });
 
 
@@ -21,6 +21,7 @@ $(document).ready(function(){
       autoplay: true,
       autoplaySpeed: 2000,
       speed: 1200,
+      arrows: false,
       prevArrow: '<button type="button" class="slick-prev"><img src="../icons/prev-arrow.png"></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="../icons/next-arrow.png"></button>'
     });
