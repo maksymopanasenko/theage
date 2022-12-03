@@ -16,18 +16,41 @@
         text-align: center;
         font-weight: 500;
     }
+    &__after {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+        span {
+            color: $text-color;
+            font-size: 18px;
+        }
+        &__reserv {
+            font-size: 18px;
+            color: $text-color;
+            text-decoration: none;
+            text-shadow: 1px 1px 4px red;
+        }
+    }
     &__btn {
         background: rgba(228, 20, 20, 0.579);
-        margin: 100px auto 0 auto ;
+        // margin: 100px auto 0 auto;
         width: 300px;
         height: 80px;
-        color: $text_color;  
-        font-size: 32px;
+        text-transform: uppercase; 
+        font-size: 26px;
         line-height: 70px;
         font-weight: 500;
+        color: $text_color;
+        text-decoration: none;
         text-align: center;
         border: 3px solid rgb(80, 31, 31);
         border-radius: 100px;
         cursor: pointer;
+        &:hover {
+            color: $text-color;
+        }
     }
 }

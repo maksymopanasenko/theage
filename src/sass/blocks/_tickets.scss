@@ -3,7 +3,7 @@
     padding: 90px 0;
     background: url('../../img/bg/form_bg.jpg') center (center/cover) no-repeat;
     &__title {
-        margin-top: 60px;
+        margin-top: 90px;
     }
     &__descr {
         margin-top: 40px;
@@ -28,7 +28,7 @@
     }
     &__item {
         position: relative;
-        height: 440px;
+        min-height: 460px;
         width: 215px;
         padding: 10px 20px;
         text-align: center;
@@ -59,10 +59,17 @@
                 color: $text-color;
             }
         }
+        &__price {
+            font-size: 24px;
+            font-weight: 900;
+            text-shadow: 0px 0px 1px rgb(223, 51, 51);
+        }
         &__btn {
-            width: 120px;
+            margin-top: 10px;
+            width: 140px;
             height: 50px;
             border-radius: 20px;
+            font-size: 19px;
             background:  rgba(228, 20, 20, 0.579);
             color: $text-color;
             border: none;
@@ -81,6 +88,66 @@
         &__img {
             width: 160px;
         }
+    }
+    &__form {
+        background: rgba(99, 96, 96, 0.749);
+        margin: 60px auto 0 auto;
+        min-height: 300px;
+        width: 600px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: 2px solid rgb(228, 20, 20);
+        &__btn {
+            width: 200px;
+            height: 70px;
+            border-radius: 20px;
+            background:  rgba(228, 20, 20, 0.457);
+            color: $text-color;
+            font-size: 24px;
+            border: none;
+            box-shadow: 0px 0px 7px black;
+        }
+    }
+    &__ticket-input {
+        display: block;
+        width: 340px;
+        height: 35px;
+        text-align: center;
+        font-size: initial;
+        border-radius: 10px;
+        border: 2px solid rgb(95, 214, 44);
+        margin-top: 15px;
+    }
+    
+    &__datetime {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__date, &__time, &__ticket-name {
+        margin: 0;
+        font-size: 24px;
+        line-height: 30px;
+        color: $text-color;
+        font-weight: 900;
+        text-shadow: 1px 1px 5px rgb(215, 31, 31);
+        input {
+            width: 140px;
+            height: 35px;
+            margin-left: 5px;
+            text-align: center;
+            font-size: initial;
+            // color: $text-color;
+            border-radius: 10px;
+            border: 2px solid rgb(95, 214, 44);
+        }
+    }
+    &__ticket-name {
+        display: block;
+        text-align: center;
     }
     
 }
