@@ -1,5 +1,5 @@
 .area {
-    padding: 60px 0 50px 0;
+    padding: 60px 0;
     background: rgb(67,67,67);
     background: linear-gradient(194deg, rgba(67,67,67,1) 0%, rgba(106,101,97,1) 100%);
     &__text {
@@ -13,8 +13,34 @@
     &__wrapper {
         margin: 50px auto 0 auto;;
         width: 800px;
+        .slick-dots {
+            text-align: center;
+            padding: 0;
+            margin: 0;            
+            .slick-active {
+                border: 3px solid #753434;
+                box-shadow: 0 0 10px #ffffff;
+                transform: scale(1.05);
+            }
+            li {
+                display: inline-block;
+                border: 3px solid rgb(40, 40, 40);
+                margin: 0 17px;
+                list-style-type: none;
+                width: 125px;
+                height: 85px;
+                background: url('../../img/content/locations/forest.jpg') center (center/cover) no-repeat;
+                img {
+                    width: 100%;
+                }
+                button {
+                    display: none;
+                }
+            }
+        }
     }
     &__item {
+        margin-bottom: 50px;
         min-height: 450px;
         display: flex;
         flex-direction: column;
@@ -25,7 +51,13 @@
             color: $text-color;
             font-size: 24px;
         }  
+        
+    }
+    &__img {
+        width: 100%;
         img {
+            display: block;
+            margin: 0 auto;            
             width: 90%;
             border-radius: 20px;
         }

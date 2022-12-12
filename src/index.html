@@ -17,30 +17,63 @@
             <img src="img/logo/logo.png" alt="dinopedia_logo">
         </div>
         <nav class="header__menu">
-            <a href="#about" class="header__menu-item">Про нас</a>
-            <a href="#division" class="header__menu-item">Каталог видів</a>
-            <a href="#tickets" class="header__menu-item">Квитки</a>
-            <a href="#contact" class="header__menu-item">Контакти</a>
+            <a href="#about" class="header__menu-item">O nas</a>
+            <a href="#division" class="header__menu-item">Katalog</a>
+            <a href="#tickets" class="header__menu-item">Bilety</a>
+            <a href="#contact" class="header__menu-item">Kontakt</a>
         </nav>
+        <div class="header__hamburger">
+            <span></span>
+            <span class="long"></span>
+            <span></span>
+        </div>
     </header>
     <aside class="upbutton">
         <img src="icons/arrow-up.png" alt="arrow-up">
-        На головну
+        Strona główna
     </aside>
+
     <main>
+        <div class="menu">
+            <div class="menu__block">
+                <div class="menu__close">
+                    <svg width="23" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="green"></path>
+                    </svg>
+                </div>
+                <nav>
+                    <ul class="menu__list">
+                        <li class="menu__link">
+                            <a href="#about">O nas</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="#division">Katalog</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="#tickets">Bilety</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="#contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu__overlay"></div>
+        </div>
+
         <section class="promo">
             <div class="container">
                 <h1 class="promo__title">
-                    The AGE наближається... Підкори землю гігантів!
+                    The AGE się zbliża... Podbij ziemię gigantów!
                 </h1>
                 <h2 class="promo__subtitle">
-                    Найфеєричніша подія століття незабаром у твоєму місті.
+                    Największe wydarzenie stulecia już wkrótce w Twoim mieście.
                 </h2>
                 <div class="promo__after">
                     
-                    <a href="#tickets" class="promo__btn">Придбай квиток</a>
-                    <span>або</span>
-                    <a class="promo__after__reserv" href="#reserv">Зарезервуй дату та час</a>
+                    <a href="#tickets" class="promo__btn">Kup bilet</a>
+                    <span>lub</span>
+                    <a class="promo__after__reserv" href="#reserv">Zarezerwój datę i godzinę</a>
                 </div>
             </div>
         </section>
@@ -48,30 +81,30 @@
         <section id="about" class="about">
             <div class="container">
                 <h2 class="title about__title">
-                    Доісторичний парк у XXI столітті - міф чи реальність?
+                    Park prehistoryczny w XXI wieku. Mit czy rzeczywistość?
                 </h2>
                 <div class="divider"></div>
 
                 <div class="about__descr">
-                    <img src="img/content/about/dinosaurs-nc.jpg" alt="dinosaurs" class="about__picture">
+                    <img src="img/content/about/dinosaurs.jpg" alt="dinosaurs" class="about__picture">
                     <p class="about__text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis rerum quo eligendi blanditiis, animi architecto consequatur repellat saepe rem laboriosam, magni itaque velit modi error quibusdam sapiente placeat. Aliquam, pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, possimus id? Doloribus dolorem ea minus nisi assumenda. Exercitationem, aspernatur velit accusantium doloremque laborum porro quia deserunt, aut, esse officiis iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quo illum asperiores odio a maxime ducimus, inventore omnis consectetur obcaecati, tempore, recusandae doloremque iure vel repellendus ipsum beatae perspiciatis saepe.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis rerum quo eligendi blanditiis, animi architecto consequatur repellat saepe rem laboriosam, magni itaque velit modi error quibusdam sapiente placeat. Aliquam, pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, possimus id? Doloribus dolorem ea minus nisi assumenda. Exercitationem, aspernatur velit accusantium doloremque laborum porro quia deserunt, aut, esse officiis iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
                 </div>
 
-                <h3 class="title about__subtitle">The AGE - це:</h3>
+                <h3 class="title about__subtitle">The AGE to:</h3>
                 <div class="about__wrapper">
                     <ul class="about__column">
-                        <li class="about__column-item">2000 км<sup>2</sup> території парку</li>
-                        <li class="about__column-item">Понад 50 видів динозаврів</li>
-                        <li class="about__column-item">Комфорт та безпека під час екскурсії</li>
-                        <li class="about__column-item">Максимально точне відтворення флори та фауни</li>
+                        <li class="about__column-item">2000 km<sup>2</sup> terytorium parku</li>
+                        <li class="about__column-item">Ponad 50 gatunków dinozaurów</li>
+                        <li class="about__column-item">Komfort i bezpieczeństwo podczas wycieczki</li>
+                        <li class="about__column-item">Najdokładniejsze odwzorowanie flory i fauny</li>
                     </ul>
                     <ul class="about__column">
-                        <li class="about__column-item">2000 км<sup>2</sup> території парку</li>
-                        <li class="about__column-item">Понад 50 видів динозаврів</li>
-                        <li class="about__column-item">Комфорт та безпека під час екскурсії</li>
-                        <li class="about__column-item">Максимально точне відтворення флори та фауни</li>
+                        <li class="about__column-item">Efekt 7D</li>
+                        <li class="about__column-item">Lorem ipsum dolores</li>
+                        <li class="about__column-item">Lorem ipsum dolores</li>
+                        <li class="about__column-item">Lorem ipsum dolores</li>
                     </ul>
                 </div>
 
@@ -84,24 +117,24 @@
         <section id="division" class="division">
             <div class="container">
                 <h2 class="title division__title">
-                    Кого можна зустріти в нашому парку?
+                    Kogo można spotkać w naszym parku?
                 </h2>
                 <div class="divider"></div>
-                <p class="division__descr">
+                <p class="division__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, architecto sapiente dolorum explicabo eos, eius porro ipsa accusamus suscipit ipsam libero quibusdam asperiores nobis voluptatibus quae rerum! Fugit, quo quod. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sit similique tenetur aut tempora eligendi temporibus incidunt, error aliquid minima provident libero fugit culpa ipsum, iure, mollitia modi laboriosam necessitatibus.
                 </p>
                 <div class="division__wrapper">
                     <img src="img/content/division/egg.png" alt="egg" class="division__img-center">
                     <div class="division__inner">
                         <img src="img/content/division/carnivorous.png" alt="carnivorous" class="division__inner__picture">
-                        <div class="division__inner__title">М'ясоїдні (хижаки)</div>
+                        <div class="division__inner__title">Drapieżniki</div>
                         <div class="division__inner__descr">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet necessitatibus facere aliquid quod dolorum praesentium magnam nemo, dolorem corrupti aliquam voluptatibus nisi quisquam, laudantium recusandae? Ducimus cumque recusandae autem mollitia!
                         </div>
                     </div>
                     <div class="division__inner">
                         <img src="img/content/division/herbivorous.png" alt="herbivorous" class="division__inner__picture">                        
-                        <div class="division__inner__title">Травоїдні (фітофаги)</div>
+                        <div class="division__inner__title">Fitofagi</div>
                         <div class="division__inner__descr">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet necessitatibus facere aliquid quod dolorum praesentium magnam nemo, dolorem corrupti aliquam voluptatibus nisi quisquam, laudantium recusandae? Ducimus cumque recusandae autem mollitia!
                         </div>
@@ -116,296 +149,285 @@
 
         <section class="dinosaurs">
             <div class="container">
-                <h2 class="title dinosaurs__title">Представники мезозойської ери</h2>
+                <h2 class="title dinosaurs__title">Przedstawiciele ery mezozoicznej</h2>
+                <div class="divider"></div>
                 <p class="dinosaurs__descr">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione optio consectetur aperiam. Rerum quibusdam ea laborum, libero iusto repellendus iure corporis quam officiis veniam error magni porro commodi animi non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione optio consectetur aperiam. Rerum quibusdam ea laborum, libero iusto repellendus iure corporis quam officiis veniam error magni porro commodi animi non?
                 </p>
 
                 <div class="tab">
                     <ul class="tab-list">
-                        <li class="tab-item tab-item_active">Травоїдні</li>
-                        <li class="tab-item">М'ясоїдні</li>
+                        <li class="tab-item tab-item_active">Roślinożercy</li>
+                        <li class="tab-item">Męsożercy</li>
                     </ul>
                 
                     <div class="main">
                         <div class="dinosaurs__wrapper carnivorous">
-                            <div class="dinosaurs__inner">
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/tyrannosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Тиранозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/velotseraptor.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Велоцераптор
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/allosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Алозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/spinosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Спінозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/plesiosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Плезіозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/baryonyx.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Баріонікс
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/carcharodontosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Кархародонтозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/carnotaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Карнотавр
-                                    </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/tyrannosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Тиранозавр
                                 </div>
                             </div>
-                            <div class="dinosaurs__inner">
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/cryolophosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Кріолофозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/euparkeria.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Еупаркерія
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/dilophosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Дилофозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/compsognathus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Компсогнатус
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/proceratosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Процератозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/dimetrodon.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Диметродон
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/pteranodon.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Птеранодон
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/acrocanthosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Акрокантозавр
-                                    </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/velotseraptor.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Велоцераптор
                                 </div>
                             </div>
-                            <div class="dinosaurs__inner">
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/utahraptor.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Ютараптор
-                                    </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/allosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Алозавр
                                 </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/giganotosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Гіганотозавр
-                                    </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/spinosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Спінозавр
                                 </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/mosasaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Мозазавр
-                                    </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/plesiosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Плезіозавр
                                 </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/rhamphorhynchus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Рамфорінхус
-                                    </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/baryonyx.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Баріонікс
                                 </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/carnivorous/torvosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Торвозавр
-                                    </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/carcharodontosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Кархародонтозавр
                                 </div>
-                            </div> 
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/carnotaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Карнотавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/cryolophosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Кріолофозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/euparkeria.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Еупаркерія
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/dilophosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Дилофозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/compsognathus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Компсогнатус
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/proceratosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Процератозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/dimetrodon.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Диметродон
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/pteranodon.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Птеранодон
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/acrocanthosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Акрокантозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/utahraptor.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Ютараптор
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/giganotosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Гіганотозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/mosasaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Мозазавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/rhamphorhynchus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Рамфорінхус
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/carnivorous/torvosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Торвозавр
+                                </div>
+                            </div>
                         </div>
     
                         <div class="dinosaurs__wrapper herbivorous">
-                            <div class="dinosaurs__inner">
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/anchisaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Анхізавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/ankylosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Анкілозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/apatosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Апатозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/argentinosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Аргентинозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/brachiosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Брахіозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/camptosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Камптозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/corythosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Коритозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/diplodok.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Диплодок
-                                    </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/anchisaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Анхізавр
                                 </div>
                             </div>
-                            <div class="dinosaurs__inner">
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/einiosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Ейніозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/gallimimus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Галімімус
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/iguanodon.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Ігуанодон
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/minmi.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Мінмі
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/ouranosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Уранозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/pachycefalozaur.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Пахіцефалозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/panoplosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Паноплозавр
-                                    </div>
-                                </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/parasaurolophus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Паразауролоф
-                                    </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/ankylosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Анкілозавр
                                 </div>
                             </div>
-                            <div class="dinosaurs__inner">
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/parksosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Парксозавр
-                                    </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/apatosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Апатозавр
                                 </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/saurolophus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Зауролоф
-                                    </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/argentinosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Аргентинозавр
                                 </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/stegosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Стегозавр
-                                    </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/brachiosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Брахіозавр
                                 </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/stygimoloch.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Стигімолох
-                                    </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/camptosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Камптозавр
                                 </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/styracosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Стиракозавр
-                                    </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/corythosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Коритозавр
                                 </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/triceratops.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Трицератопс
-                                    </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/diplodok.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Диплодок
                                 </div>
-                                <div class="dinosaurs__item">
-                                    <img src="img/content/dinosaurs/herbivorous/yinlong.jpg" alt="dino" class="dinosaurs__item__picture">
-                                    <div class="dinosaurs__item__text">
-                                        Іньлун
-                                    </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/einiosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Ейніозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/gallimimus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Галімімус
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/iguanodon.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Ігуанодон
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/minmi.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Мінмі
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/ouranosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Уранозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/pachycefalozaur.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Пахіцефалозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/panoplosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Паноплозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/parasaurolophus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Паразауролоф
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/parksosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Парксозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/saurolophus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Зауролоф
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/stegosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Стегозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/stygimoloch.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Стигімолох
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/styracosaurus.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Стиракозавр
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/triceratops.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Трицератопс
+                                </div>
+                            </div>
+                            <div class="dinosaurs__item">
+                                <img src="img/content/dinosaurs/herbivorous/yinlong.jpg" alt="dino" class="dinosaurs__item__picture">
+                                <div class="dinosaurs__item__text">
+                                    Іньлун
                                 </div>
                             </div>
                         </div>
@@ -421,30 +443,40 @@
         <section class="area">
             <div class="container">
                 <h2 class="title area__title">
-                    Не динозаврами самими!
+                    Dinozaury to nie wszystko!
                 </h2>
                 <p class="area__text">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia vitae aliquid impedit fugit exercitationem placeat vero veniam, ipsa nulla rerum, nam quod aspernatur enim a quos iste minima magnam? Facere?
                 </p>
                 <div class="area__wrapper">
                     <div class="area__item">
-                        <img src="img/content/locations/forest.jpg" alt="area_1">
+                        <div class="area__img">
+                            <img src="img/content/locations/forest.jpg" alt="area_1">
+                        </div>
+                        <div class="area__item__descr">Las</div>
+                    </div>
+                    <div class="area__item">
+                        <div class="area__img">
+                            <img src="img/content/locations/forest_2.jpg" alt="area_2"> 
+                        </div>
+                        <div class="area__item__descr">Tropiki</div>
+                    </div>
+                    <div class="area__item">
+                        <div class="area__img">
+                            <img src="img/content/locations/forest_3.jpg" alt="area_3">
+                        </div>
                         <div class="area__item__descr">Ліс</div>
                     </div>
                     <div class="area__item">
-                        <img src="img/content/locations/forest_2.jpg" alt="area_2">
+                        <div class="area__img">
+                            <img src="img/content/locations/forest_4.jpg" alt="area_4">
+                        </div>
                         <div class="area__item__descr">Ліс</div>
                     </div>
                     <div class="area__item">
-                        <img src="img/content/locations/forest_3.jpg" alt="area_3">
-                        <div class="area__item__descr">Ліс</div>
-                    </div>
-                    <div class="area__item">
-                        <img src="img/content/locations/forest_4.jpg" alt="area_4">
-                        <div class="area__item__descr">Ліс</div>
-                    </div>
-                    <div class="area__item">
-                        <img src="img/content/locations/forest_5.jpg" alt="area_4">
+                        <div class="area__img">
+                            <img src="img/content/locations/forest_5.jpg" alt="area_4">
+                        </div>
                         <div class="area__item__descr">Ліс</div>
                     </div>
                 </div>
@@ -453,14 +485,14 @@
 
         <section id="tickets" class="tickets">
             <div class="container">
-                <h2 class="title">
-                    Як купити квитки?
+                <h2 class="title tickets__title">
+                    Jak mogę kupić bilety?
                 </h2>
                 <p class="tickets__descr">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, nihil rerum magni tempore aut officiis ipsam molestias ut illo odio omnis quo a nulla placeat harum ratione dolorem ea amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime iure repellat vitae quod. Praesentium error non reprehenderit a reiciendis, alias ullam beatae ipsam ratione quod itaque porro, sit quae rem!
                 </p>
-                <div class="tickets__subtitle">
-                    Оберіть пакет, який вам найбільш відповідає
+                <div class="title tickets__subtitle">
+                    Wybierz pakiet, który najbardziej Ci odpowiada
                 </div>
                 <div class="tickets__wrapper">
                     <div class="tickets__item">
@@ -474,8 +506,8 @@
                             <li>Lorem ipsum</li>
                             <li>Lorem ipsum</li>
                         </ul>
-                        <div class="tickets__item__price">319 грн</div>
-                        <button data-modal="buy" class="tickets__item__btn">Придбати</button>
+                        <div class="tickets__item__price">99 zł</div>
+                        <button data-modal="buy" class="tickets__item__btn">Kupić</button>
                     </div>
                     <div class="tickets__item">
                         <div class="tickets__item__title">Silver</div>
@@ -488,8 +520,8 @@
                             <li>Lorem ipsum</li>
                             <li>Lorem ipsum</li>
                         </ul>
-                        <div class="tickets__item__price">479 грн</div>
-                        <button data-modal="buy" class="tickets__item__btn">Придбати</button>
+                        <div class="tickets__item__price">149 zł</div>
+                        <button data-modal="buy" class="tickets__item__btn">Kupić</button>
                     </div>
                     <div class="tickets__item">
                         <div class="tickets__item__title">Golden</div>
@@ -502,11 +534,11 @@
                             <li>Lorem ipsum</li>
                             <li>Lorem ipsum</li>
                         </ul>
-                        <div class="tickets__item__price">579 грн</div>
-                        <button data-modal="buy" class="tickets__item__btn">Придбати</button>
+                        <div class="tickets__item__price">199 zł</div>
+                        <button data-modal="buy" class="tickets__item__btn">Kupić</button>
                     </div>
                     <div class="tickets__item">
-                        <div class="tickets__item__title">VIP</div>
+                        <div class="tickets__item__title vip">VIP</div>
                         <div class="tickets__img">
                             <img class="tickets__item__img" src="img/tickets/ticket_vip.png" alt="ticket">
                         </div>
@@ -516,27 +548,27 @@
                             <li>Lorem ipsum</li>
                             <li>Lorem ipsum</li>
                         </ul>
-                        <div class="tickets__item__price">699 грн</div>
-                        <button data-modal="buy" class="tickets__item__btn">Придбати</button>
+                        <div class="tickets__item__price">299 zł</div>
+                        <button data-modal="buy" class="tickets__item__btn">Kupić</button>
                     </div>
                 </div>
 
-                <h2 id="reserv" class="title tickets__title">
-                    Маєш квиток? Зарезервуй дату та час!
+                <h2 id="reserv" class="title tickets__title-reserv">
+                    Masz bilet? Zarezerwuj datę i godzinę!
                 </h2>
                 <p class="tickets__descr">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex at minus molestias maiores repellat sunt magnam nemo voluptatibus ullam molestiae nesciunt illum optio architecto itaque, laudantium cumque unde sint eos?
                 </p>
                 <form action="#" class="tickets__form">
                     <div class="tickets__ticket-numblock">
-                        <label class="tickets__ticket-name" for="ticketNum">Номер квитка</label>
-                        <input class="tickets__ticket-input" name="ticketNum" type="text" autocomplete="off" minlength="9" maxlength="9" placeholder="Введіть номер квитка" required>
+                        <label class="tickets__ticket-name" for="ticketNum">Numer biletu</label>
+                        <input class="tickets__ticket-input" name="ticketNum" type="text" autocomplete="off" minlength="9" maxlength="9" placeholder="Wprowadź numer biletu" required>
                     </div>
                     <div class="tickets__datetime">
-                        <p class="tickets__date">Дата: <input type="text" autocomplete="off" id="datepicker" placeholder="Оберіть дату" readonly required></p>
-                        <p class="tickets__time">Час: <input id="timepicker" autocomplete="off" type="text" placeholder="Оберіть годину" readonly required></p>
+                        <p class="tickets__date">Data: <input type="text" autocomplete="off" id="datepicker" placeholder="Wybierz datę" tabIndex="-1" style="pointer-events: none;" required></p>
+                        <p class="tickets__time">Godzina: <input id="timepicker" autocomplete="off" type="text" placeholder="Wybierz godzinę" readonly required></p>
                     </div>
-                    <button type="submit" data-modal="finish" class="tickets__form__btn">Резервувати</button>
+                    <button type="submit" data-modal="finish" class="tickets__form__btn">Rezerwuj</button>
                 </form>
                 
             </div>
@@ -560,10 +592,10 @@
             </div>
 
             <div class="contact__menu">
-                <a href="#" class="contact__menu-item">Головна</a>
-                <a href="#division" class="contact__menu-item">Каталог видів</a>
-                <a href="#tickets" class="contact__menu-item">Квитки</a>
-                <a href="#" class="contact__menu-item">Контакти</a>
+                <a href="#" class="contact__menu-item">Strona główna</a>
+                <a href="#about" class="contact__menu-item">O nas</a>
+                <a href="#division" class="contact__menu-item">Katalog</a>
+                <a href="#tickets" class="contact__menu-item">Bilety</a>
             </div>
 
             <div class="contact__details">
@@ -574,7 +606,7 @@
                     <a href="mailto:contact@theage.com">contact@theage.com</a>
                 </div>
                 <div id="location" class="contact__details__item">
-                    вул.Паркова 59, 08325 Щасливе, Україна 
+                    ul.Parkowa 59, 55-114 Wiśnia Mała, Polska 
                 </div>
             </div>
         </div>
@@ -587,25 +619,25 @@
     <div class="overlay">
         <div class="modal" id="buy">
             <div class="modal__close">x</div>
-            <h3 class="modal__title">Ваше замовлення</h3>
-            <div class="modal__subtitle">Квиток <span></span></div>
+            <h3 class="modal__title">Twoje zamówienie</h3>
+            <div class="modal__subtitle">Bilet <span></span></div>
             <div class="modal__img"></div>
-            <div class="modal__total">Сума до оплати: <span></span></div>
+            <div class="modal__total">Do zapłaty: <span></span></div>
             <button data-modal="reservation" class="modal__btn modal__payment">Оплатити</button>
         </div>
         <div class="modal" id="reservation">
             <div class="modal__close">x</div>
-            <h3 class="modal__title">Спрацювало!</h3>
+            <h3 class="modal__title">Powiodło się!</h3>
             <div class="modal__img"></div>
-            <div class="modal__subtitle">Не забудь зарезервувати дату та час візиту!</div>
-            <a id="reservat" href="#reserv" class="modal__btn modal__reservation">Перейти до резервації</a>
+            <div class="modal__subtitle">Nie zapomnij zarezerwować daty i godziny wizyty!</div>
+            <a id="reservat" href="#reserv" class="modal__btn modal__reservation">Przejdź do rezerwacji</a>
         </div>
 
         <div class="modal" id="finish">
             <div class="modal__close">x</div>
-            <h3 class="modal__title">Чудова робота!</h3>
+            <h3 class="modal__title">Świetna robota!</h3>
             <p class="modal__text">Lorem</p>
-            <div class="modal__subtitle">Чекаємо тебе з нетерпінням у нашому парку!</div>
+            <div class="modal__subtitle modal__subtitle_finish">Czekamy na Ciebie w naszym parku!</div>
             <img src="img/logo/logo.png" alt="logo" class="modal__picture">
         </div>
     </div>

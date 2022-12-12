@@ -14,7 +14,7 @@
         }
     }
     &__menu {
-        width: 580px;
+        width: 470px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -28,5 +28,8 @@
                 transform: scale(1.09);
             }
         }
+    }
+    &__hamburger {
+        display: none;
     }
 }

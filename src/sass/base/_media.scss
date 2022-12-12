@@ -1,0 +1,705 @@
+@media (max-width: 1200px) {
+    .upbutton {
+        width: 60px;
+        height: 60px;
+        font-size: 7px;
+        right: 30px;
+        img {
+            width: 35px;
+        }
+    }
+    .header {
+        &__menu {
+            width: 420px;
+        }
+    }
+    .container {
+        width: 800px;
+    }
+    .divider {
+        margin: 25px auto;
+    }
+    .promo {
+        &__title {
+            font-size: 40px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            margin: 20px auto 50px auto;
+        }
+        &__after {
+            height: 130px;
+            margin: 0;
+            &__reserv {
+                font-size: 16px;
+            }
+            span {
+                font-size: 16px;
+            }
+        }
+        &__btn {
+            width: 265px;
+            font-size: 23px;
+            height: 65px;
+            line-height: 61px;
+        }
+    }
+
+    // about 992-1200
+
+    .about {
+        &__wrapper {
+            margin: 40px 0;
+        }
+        &__column {
+            width: 380px;
+        }
+    }
+
+    .dinosaurs {
+        .slick-prev {
+            left: 230px;
+        }
+        .slick-next {
+            left: 565px;
+        }
+    }
+
+    // tickets
+
+    .tickets {
+        &__item {
+            width: 185px;
+            .vip {
+                &:first-child {
+                    &::before {
+                        left: 0;
+                    }
+                    &::after {
+                        left: 106px;
+                    }
+                }
+            }
+        }
+        &__img {
+            img {
+                width: 140px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+       &__logo {
+            width: 160px;
+        }
+        &__menu {
+            width: 360px;
+            &-item {
+                font-size: 23px;
+            }
+        }
+        
+    }
+    .upbutton {
+        right: 10px;
+        bottom: 50px;
+    }
+    .container {
+        width: 670px;
+    }
+    .title {
+        font-size: 32px;
+    }
+    .promo {
+        padding-top: 120px;
+        &__title {
+            font-size: 40px;
+        }
+        &__subtitle {
+            margin: 20px auto 55px auto;
+        }
+        &__btn {
+            width: 245px;
+            height: 65px;
+            font-size: 21px;
+            line-height: 60px;
+        }
+        &__after {
+            margin-top: 25px;
+            &__reserv {
+                display: none;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+    .about {
+        padding: 60px 0;
+        &__picture {
+            width: 450px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 33px;
+        }
+        &__subtitle {
+            margin-top: 60px;
+        }
+        &__column {
+            width: 315px;
+            &-item {
+                font-size: 19px;
+            }
+        }
+    }
+    .division {
+        &__text {
+            line-height: 30px;
+        }
+        &__inner {
+            width: 280px;
+            &__title {
+                width: 160px;
+                font-size: 22px;
+            }
+        }
+        &__img-center {
+            width: 130px;
+        }
+
+    }
+    .dinosaurs {
+        .slick-prev {
+            left: 140px;
+        }
+        .slick-next {
+            left: 530px;
+        }
+    }
+    .area {
+        &__wrapper {
+            width: 660px;
+            .slick-dots {
+                li {
+                    margin: 0 10px;
+                    width: 112px;
+                    height: 65px;
+                }
+            }
+        }
+        &__item {
+            margin-bottom: 30px;
+            min-height: 400px;
+        }
+    }
+    .tickets {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: unset;
+        }
+        &__item {
+            width: 240px;
+            margin: 0 45px 20px 45px;
+            .vip{
+                &:first-child::before {
+                    left: 20px;
+                }
+                &:first-child::after {
+                    left: 140px;
+                }
+            }
+            
+        }
+        &__form {
+            margin-top: 45px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .upbutton {
+        display: none;
+    }
+    .header {
+        padding-top: 10px;
+        display: block;
+        padding-left: 20px;
+        &__logo {
+            width: 110px;
+        }
+        &__menu {
+            display: none;
+        }
+        &__hamburger {
+            position: absolute;
+            z-index: 4;
+            top: 20px;
+            right: 30px;
+            height: 21px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            cursor: pointer;
+            span {
+                display: block;
+                width: 30px;
+                height: 3px;
+                background-color: $text-color;
+            }
+        }
+    }
+    .container {
+        width: 500px;
+    }
+    .title {
+        font-size: 26px;
+    }
+    .promo {
+        &__subtitle {
+            width: 100%;
+            margin: 15px auto 30px auto;
+        }
+        &__after {
+            height: 120px;
+            span {
+                font-size: 14px;
+            }
+        }
+        &__btn {
+            width: 230px;
+            height: 65px;
+            line-height: 62px;
+            font-size: 20px;
+        }
+    }
+    .about {
+        &__title {
+            width: 100%;
+        }
+        &__descr {
+            margin-top: 30px;
+        }
+        &__picture {
+            width: 400px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &__subtitle {
+            margin-top: 40px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            margin: 10px auto;
+        }
+        &__column {
+            margin-top: 20px;
+        }
+    }
+    .division {
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &__img-center {
+            display: none;
+        }
+        &__wrapper {
+            margin-top: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__inner {
+            margin-top: 20px;
+            &__title {
+                width: 185px;
+                font-size: 16px;
+                &::before, &::after {
+                    top: 11px;
+                }
+            }
+            &__picture {
+                margin-top: 0;
+            }
+            &__descr {
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+    }
+    .dinosaurs {
+        &__descr {            
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .tab{
+            &-list {
+                margin-top: 20px;
+            }
+            &-item {
+                height: 40px;
+                width: 160px;
+                font-size: 20px;            
+                line-height: 40px;
+            }
+        }
+        .main {
+            padding-top: 30px;
+        }
+        &__item {
+            width: 125px;
+            height: 165px;
+        }
+        .dinosaurs__dots {
+            margin-top: 20px;
+            li {
+                margin: 0 8px;
+                button {                    
+                    width: 20px;
+                    height: 20px;
+                    font-size: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .area {
+        padding: 60px 0 20px 0;
+        &__text {            
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &__wrapper {
+            width: 500px;
+        }
+        &__item {
+            margin-bottom: 30px;
+            min-height: 300px;
+            &__descr {
+                font-size: 18px;
+            }
+        }
+    }
+    .tickets {
+        padding: 60px 0;
+        &__title {
+            margin: 0;
+            &-reserv {                            
+                margin-top: 30px;
+            }
+        }
+        &__wrapper {
+            justify-content: center;
+        }
+        &__item {
+            min-height: 345px;
+            &__title {
+                font-size: 24px;
+            }
+            &__list {
+                li {
+                    font-size: 14px;
+                }
+            }
+            &__btn {                
+                width: 120px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+        &__img {
+            img {
+                width: 100px;
+            }
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &__form {
+            width: 560px;
+            margin: 0 auto;
+            &__btn {
+                width: 170px;
+                height: 60px;
+                font-size: 22px;
+            }
+        }
+
+    }
+    .contact {
+        height: 285px;
+        &__menu {
+            &-item {
+                font-size: 20px;
+            }
+        }
+        &__details {
+            &__item {
+                font-size: 14px;
+            }
+        }
+    }
+    
+    .overlay {
+        .modal {
+            height: 300px;
+            padding: 10px;
+            &__title {
+                font-size: 24px;
+            }
+            &__subtitle {
+                font-size: 20px;
+            }
+            &__img {
+                width: 100px;
+            }
+            &__total {
+                margin-top: 10px;
+                font-size: 18px;
+                span {                    
+                    font-size: 22px;
+                }
+            }
+            &__btn {
+                width: 200px;
+                height: 50px;
+            }
+
+            &__text {
+                margin-top: 20px;
+            }
+            &__picture {                
+                margin: 15px auto 0 auto;
+                width: 220px;
+            }
+            &__reservation {
+                font-size: 16px;
+                line-height: 50px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 575px) {
+    .header {
+        &__logo {
+            width: 90px;
+        }
+        &__hamburger {
+            height: 19px;
+        }
+    }
+    .menu {
+        &__block {
+            width: 300px;
+        }
+    }
+    .container {
+        width: 300px;
+    }
+    .divider {
+        width: 100px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .promo {
+        height: 450px;
+        padding: 55px 0 0 0;
+        &__title {
+            font-size: 25px;
+        }
+        &__subtitle {
+            width: 100%;
+            font-size: 16px;
+        }
+        &__btn {
+            width: 160px;
+            font-size: 14px;
+            height: 50px;
+            line-height: 44px;
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__picture {
+            border-radius: 20px; 
+            width: 100%;           
+        }
+        &__column {
+            width: 100%;
+            &-item {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    .division {
+        padding: 80px 0;
+        &__inner {
+            width: 230px;
+            &__title {
+                width: 120px;
+            }
+        }
+    }
+    .dinosaurs {
+        padding: 80px 0;
+        &__descr {
+            margin-top: 25px;            
+        }
+        .tab {
+            &-list {
+                justify-content: space-around;
+                margin: 0;                
+            }
+            &-item {
+                width: 100px;
+                margin: 0 auto;
+                font-size: 16px;
+                &_active {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        &__wrapper {
+            padding: 0 40px;
+            .slick-prev {
+                left: 30px;
+                bottom: calc(50% + 12px);
+            }
+            .slick-next {
+                left: 270px;
+                bottom: calc(50% + 12px);
+            }
+        }
+
+    }
+    .area {
+        &__text {
+            margin-top: 25px;
+        }
+        &__wrapper {
+            width: 100%;
+        }
+        &__item {
+            min-height: 190px;
+        }
+    }
+    .tickets {
+        padding: 40px 0;
+        &__descr {
+            margin-top: 25px;
+        }
+        &__wrapper {
+            margin-top: 25px;
+        }
+        &__title-reserv {
+            font-size: 20px;
+        }
+        &__form {
+            margin-top: 25px;
+            width: 300px;
+            &__btn {
+                width: 150px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+        &__ticket {
+            &-name {
+                font-size: 16px;
+            }
+            &-input {
+                width: 260px;
+            }
+        }
+        &__date, &__time {
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input {
+                margin: 0;
+            }
+        }
+    }
+    .contact {
+        height: 210px;
+        &__info {
+            padding-top: 25px;
+        }
+        &__menu {
+            display: none;
+        }
+        &__details {
+            width: 100%;
+            &__item {
+                font-size: 12px;
+            }
+        }
+
+        &__footer {
+            line-height: 41px;
+        }
+
+        #location {
+            &::before {
+                left: 15px;
+            }
+        }
+    }
+    .overlay {
+        .modal {
+            width: 300px;
+            height: 240px;
+            &__close {
+                top: 6px;
+                right: 6px;
+            }
+            &__title {
+                font-size: 20px;
+            }
+            &__subtitle {
+                font-size: 18px;
+                line-height: 25px;
+                &_finish {
+                    line-height: 22px;
+                }
+            }
+            &__img {
+                width: 80px;
+            }
+            &__total {
+                margin: 0;
+            }
+            &__btn {
+                width: 180px;
+                height: 40px;
+                font-size: 24px;
+                margin-top: 5px;
+            }
+            &__reservation {
+                font-size: 14px;
+                line-height: 41px;
+                margin-top: 40px;
+            }
+            &__text {
+                margin-top: 15px;
+                font-size: 13px;
+            }
+            &__picture {
+                margin: 10px auto 0 auto;
+                width: 120px;
+            }
+        }
+    }
+}

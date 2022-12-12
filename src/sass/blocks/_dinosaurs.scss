@@ -45,6 +45,7 @@
     .main {
         display: flex;
         width: 200%;
+        padding-top: 60px;
     }
     &__wrapper {
         width: 50%;
@@ -54,17 +55,10 @@
     .wrapper_active {
         transform: translateX(0%);
     }
-
-    &__inner {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px 40px;
-        margin-top: 50px;
-    }
     &__item {
         height: 200px;
         width: 150px;
-        margin: 10px 27px;
+        margin: 0 auto;
         &__picture {
             width: 100%;
             border-radius: 20px;
@@ -99,10 +93,11 @@
 
     // dots
     
-    .slick-dots {
+    .dinosaurs__dots {
         text-align: center;
         padding: 0;
         margin: 0;
+        margin-top: 40px;
         .slick-active {
             button {
                 background: rgb(162, 34, 34);
