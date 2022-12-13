@@ -423,13 +423,16 @@
             line-height: 22px;
         }
         &__form {
-            width: 560px;
+            width: 100%;
             margin: 0 auto;
             &__btn {
                 width: 170px;
                 height: 60px;
                 font-size: 22px;
             }
+        }
+        &__label {
+            font-size: 18px;
         }
 
     }
@@ -614,6 +617,17 @@
                 font-size: 20px;
             }
         }
+        &__datetime{
+            // flex-direction: column;
+            // align-items: center;
+            // height: 100px;
+            &__wrapper {
+                width: 40%;
+                input {
+                    width: 100%;
+                }
+            }
+        }
         &__ticket {
             &-name {
                 font-size: 16px;
@@ -622,15 +636,11 @@
                 width: 260px;
             }
         }
-        &__date, &__time {
-            font-size: 16px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            input {
-                margin: 0;
-            }
+
+        label.error {
+            font-size: 9px;
         }
+        
     }
     .contact {
         height: 210px;

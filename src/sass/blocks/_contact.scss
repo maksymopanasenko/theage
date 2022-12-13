@@ -68,16 +68,18 @@
     }
 
     #location {
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 15px;
-            height: 15px;
-            background: url('../../icons/maps-and-flags.png') center center/cover no-repeat;
+        span {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left: -20px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 15px;
+                height: 15px;
+                background: url('../../icons/maps-and-flags.png') center center/cover no-repeat;
+            }
         }
     }
 

@@ -62,20 +62,33 @@
             margin-top: 10px;
             width: 220px;
             height: 60px;
+            color: $text-color;
             font-size: 28px;
             border-radius: 20px;
             background:  rgba(228, 20, 20, 0.579);
-            color: $text-color;
             border: none;
             box-shadow: 0px 0px 7px black;
+            a {
+                text-decoration: none;
+                color: $text-color;
+                font-size: 28px;
+            }
+            &_timer {
+                margin-top: 55px;
+                a {
+                    font-size: 25px;
+                }
+            }
         }
         &__reservation {
             margin-top: 40px;
-            font-size: 20px;
             width: 260px;
             text-align: center;
-            line-height: 57px;
-            text-decoration: none; 
+            a {
+                font-size: 20px;
+                line-height: 57px;
+                text-decoration: none; 
+            }
         }
         &__text {
             color: $text-color;
@@ -87,6 +100,30 @@
             display: block;
             margin: 40px auto 0 auto;
             width: 250px;
+        }
+
+        &__timer {
+            width: 400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            text-align: center;
+            &__block {
+                width: 80px;
+                height: 90px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 20px;
+                font-size: 16px;
+                font-weight: 400;
+                background: rgb(255, 255, 255);
+                span {
+                    display: block;
+                    margin: 5px 0;
+                    font-size: 42px;
+                    line-height: 50px;
+                    font-weight: 900;
+                }
+            }
         }
     }
 }

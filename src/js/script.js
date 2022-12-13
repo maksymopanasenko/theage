@@ -104,9 +104,6 @@ $(document).ready(function(){
       });
     }
 
-    copyImg();
-
-
     const putName = (name) => {
       modalBuy.style.display = 'block';
       name.forEach((item, i) => {
@@ -118,6 +115,8 @@ $(document).ready(function(){
         
       });
     }
+
+    copyImg();
     putName(buy);
     
     $('[data-modal=buy]').on('click', function() {
@@ -129,25 +128,15 @@ $(document).ready(function(){
       $('#reservation').fadeIn('slow');
     });
 
-    $('#reservat').on('click', function() {
-      $('.overlay, #buy, #reservation').fadeOut('slow');
+    $('[data-close=close-btn]').on('click', function() {
+      $('.overlay, #buy, #reservation, #finish, #timer').fadeOut('slow');
     });
+
 
     // closing button
     
     $('.modal__close').on('click', function() {
-      $('.overlay, #buy, #reservation, #finish').fadeOut('slow');
-    });
-
-    
-
-    document.querySelector('.tickets__form').addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      reservat.innerHTML = `Twoja rezerwacja ${date.value} o godz. ${time.value} przebiegła pomyślnie. Numer biletu jest numerem Twojej rezerwacji.`;
-      $('.overlay, #finish').fadeIn('slow');
-      
-      document.querySelector('.tickets__form').reset();
+      $('.overlay, #buy, #reservation, #finish, #timer').fadeOut('slow');
     });
     
 
@@ -175,8 +164,109 @@ $(document).ready(function(){
           menu.classList.remove('menu__active');
       });
 
+      const timer = setTimeout(function() {
+        $('.overlay, #timer').fadeIn('slow');
+      }, 6000);
 
-      // alert("Informujemy, iż strona jest w trakcie rozbudowy. Niektóre funkcje mogą nie działać lub mogą nieprawidłowo. Za utrudnienia przepraszamy.");
+  // ***Timer counting the rest time till the end of a scepial offer
+
+  const deadline = '2022-12-20';
+
+  function getTimeRemaining(endtime) {
+    const difference = Date.parse(endtime) - Date.parse(new Date()),
+          days = Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours = Math.floor((difference / (1000 * 60 * 60)) % 24),
+          minutes = Math.floor((difference / (1000 * 60)) % 60),
+          seconds = Math.floor((difference / 1000) % 60);
+
+    return {
+      'total': difference,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    }
+  }
+
+  function setClockTimer(selector, endtime) {
+    const timer = document.querySelector(selector),
+          days = timer.querySelector('#days'),
+          hours = timer.querySelector('#hours'),
+          minutes = timer.querySelector('#minutes'),
+          seconds = timer.querySelector('#seconds'),
+          timeInterval = setInterval(updateClockTimer, 1000);
+
+    function updateClockTimer() {
+      const total = getTimeRemaining(endtime);
+
+      days.innerHTML = total.days,
+      hours.innerHTML = total.hours,
+      minutes.innerHTML = total.minutes,
+      seconds.innerHTML = total.seconds;
+
+      if ( total.total <= 0) {
+        clearInterval(timeInterval);
+      }
+    }
+  }
+
+  setClockTimer('.modal__timer', deadline);
+
+
+  // ***Form validation
+
+  const inputTicketNumber = document.querySelector('#ticketNum');
+
+  if (typeof(inputTicketNumber) !== 'number') {
+    $('.tickets__form').validate({
+      rules: {
+        ticketNum: "required",
+        ticketDate: "required",
+        ticketTime: "required"
+      },
+      messages: {
+        ticketNum: "Wprowadź 9-cyfrowy numer z zakupionego biletu. Dozwolone tylko cyfry.",
+        ticketDate: "Wybierz porządaną datę",
+        ticketTime: "Wybierz porządaną godzinę"
+      }
+    });
+  }
+
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+
+    if (!$(this).valid()) {
+      return;
+    }
+
+    reservat.innerHTML = `Twoja rezerwacja ${date.value} o godz. ${time.value} przebiegła pomyślnie. Numer biletu jest numerem Twojej rezerwacji.`;
+    $(this).find("input").val("");
+    $('.overlay, #finish').fadeIn('slow');
+    
+    $('form').trigger('reset');
+    // return false;
+  });
+
+
+  $('.tickets__form').validate({
+    rules: {
+      ticketNum: "required",
+      ticketDate: "required",
+      ticketTime: "required"
+    },
+    messages: {
+      ticketNum: "Wprowadź numer z zakupionego biletu",
+      ticketDate: "Wybierz porządaną datę",
+      ticketTime: "Wybierz porządaną godzinę"
+    }
+  });
+
+  
+
+  
+
+  // alert("Informujemy, iż strona jest w trakcie rozbudowy. Niektóre funkcje mogą nie działać lub mogą nieprawidłowo. Za utrudnienia przepraszamy.");
 
     //хз шо
     // const dotsDino = document.querySelector('.dinosaurs__dots'),

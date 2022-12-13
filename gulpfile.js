@@ -37,16 +37,16 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
-    gulp.watch('src/*.html').on('change', gulp.parallel('html'));
+    // gulp.watch('src/*.html').on('change', gulp.parallel('html'));
     gulp.watch('src/css/*.css').on('change', browserSync.reload);
     gulp.watch('src/js/*.js').on('change', browserSync.reload);
 });
 
-gulp.task('html', function() {
-    return gulp.src('src/*html')
-        .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest("src/"));
-});
+// gulp.task('html', function() {
+//     return gulp.src('src/*html')
+//         .pipe(htmlmin({collapseWhitespace: true}))
+//         .pipe(gulp.dest("dist/"));
+// });
 
 gulp.task('images', function() {
     return gulp.src('src/img/**/*')
