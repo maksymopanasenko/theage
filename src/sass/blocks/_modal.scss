@@ -9,37 +9,46 @@
     
     .modal {
         display: none;
+        width: 500px;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
-        width: 500px;
-        height: 500px;
-        background: #346d3f;
-        padding: 38px 40px 40px 40px;
+        transform: translate(-50%, -50%);
+        &__content {
+            position: relative;
+            width: 100%;
+            padding: 40px;
+            background-color: #346d3f;
+            border-radius: 4px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
         &__close {
             position: absolute;
             width: 30px;
             height: 30px;
             text-align: center;
-            top: 2px;
-            right: 2px;
+            top: 7px;
+            right: 7px;
             font-size: 41px;
             color: #c70101;
             line-height: 24px;
             border-radius: 5px;
             cursor: pointer;
+            z-index: 4;
             background: rgba(28, 22, 22, 0.749);
         }
         &__title {
             text-align: center;
             font-size: 34px;
             color: $text-color;
+            margin: 0;
         }
         &__subtitle {
             text-align: center;
             font-size: 28px;
             font-weight: 500;
+            margin-top: 10px;
         }
         &__img {
             display: block;
@@ -77,6 +86,13 @@
                 margin-top: 55px;
                 a {
                     font-size: 25px;
+                }
+            }
+            &_reservation {
+                margin-top: 60px;
+                a {
+                    font-size: 20px;
+                    line-height: 60px;
                 }
             }
         }

@@ -219,7 +219,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .upbutton {
         display: none;
     }
@@ -452,8 +452,7 @@
     
     .overlay {
         .modal {
-            height: 300px;
-            padding: 10px;
+            width: 400px;
             &__title {
                 font-size: 24px;
             }
@@ -470,9 +469,18 @@
                     font-size: 22px;
                 }
             }
+            &__timer {
+                margin: 0 auto;
+            }
             &__btn {
                 width: 200px;
                 height: 50px;
+                &_reservation {
+                    a {
+                        font-size: 18px;
+                        line-height: 50px;
+                    }
+                }
             }
 
             &__text {
@@ -491,7 +499,7 @@
     
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     .header {
         &__logo {
             width: 90px;
@@ -522,7 +530,7 @@
         }
         &__subtitle {
             width: 100%;
-            font-size: 16px;
+            font-size: 13px;
         }
         &__btn {
             width: 160px;
@@ -567,7 +575,8 @@
             &-item {
                 width: 100px;
                 margin: 0 auto;
-                font-size: 16px;
+                font-size: 15px;
+                border-radius: 10px;
                 &_active {
                     transform: scale(1.1);
                 }
@@ -617,14 +626,29 @@
                 font-size: 20px;
             }
         }
+        &__item {
+            .vip {
+                &:first-child {
+                    &:before, &:after {
+                        left: 14px;
+                        top: 3px;
+                        height: 30px;
+                        width: 30px;
+                    }
+                    &:after {
+                        left: 120px;
+                    }
+                }
+            }
+            
+        }
         &__datetime{
-            // flex-direction: column;
-            // align-items: center;
-            // height: 100px;
             &__wrapper {
                 width: 40%;
                 input {
                     width: 100%;
+                    font-size: 12px;
+                    margin: 0;
                 }
             }
         }
@@ -634,6 +658,7 @@
             }
             &-input {
                 width: 260px;
+                font-size: 12px;
             }
         }
 
@@ -670,13 +695,15 @@
     .overlay {
         .modal {
             width: 300px;
-            height: 240px;
             &__close {
-                top: 6px;
-                right: 6px;
+                top: 3px;
+                right: 3px;
             }
             &__title {
-                font-size: 20px;
+                &_timer {
+                    width: 200px;
+                    margin: 0 auto;
+                }
             }
             &__subtitle {
                 font-size: 18px;
@@ -693,18 +720,44 @@
             }
             &__btn {
                 width: 180px;
-                height: 40px;
                 font-size: 24px;
-                margin-top: 5px;
+                border-radius: 15px;
+                &_reservation {
+                    a {
+                        font-size: 16px;
+                        line-height: 40px;
+                    }
+                }
+                &_timer {
+                    a {
+                        font-size: 20px;
+                        line-height: 40px;
+                    }
+                }
             }
             &__reservation {
                 font-size: 14px;
                 line-height: 41px;
                 margin-top: 40px;
             }
+            &__timer {
+                width: 100%;
+                &__block {
+                    width: 65px;
+                    height: 80px;
+                    font-size: 14px;
+                    span {
+                        font-size: 40px;
+                        line-height: 42px;
+                    }
+                }
+            }
             &__text {
                 margin-top: 15px;
                 font-size: 13px;
+                &_timer {
+                    margin: 5px 0;
+                }
             }
             &__picture {
                 margin: 10px auto 0 auto;

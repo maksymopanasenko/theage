@@ -18,7 +18,7 @@ $(document).ready(function(){
             }
           },
           {
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
@@ -27,7 +27,7 @@ $(document).ready(function(){
             }
           },
           {
-            breakpoint: 576,
+            breakpoint: 577,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -105,9 +105,10 @@ $(document).ready(function(){
     }
 
     const putName = (name) => {
-      modalBuy.style.display = 'block';
+      
       name.forEach((item, i) => {
         item.addEventListener('click', () => {
+          // modalBuy.style.display = 'block';
           orderName.innerHTML = ticketName[i].innerHTML;
           orderImg.innerHTML = ticketImg[i].innerHTML;
           priceValue.innerHTML = ticketPrice[i].innerHTML;
@@ -124,7 +125,7 @@ $(document).ready(function(){
     });
 
     $('[data-modal=reservation]').on('click', function() {
-      $('#buy').fadeOut('slow');
+      $('#buy').css("display", "none");
       $('#reservation').fadeIn('slow');
     });
 
@@ -139,6 +140,7 @@ $(document).ready(function(){
       $('.overlay, #buy, #reservation, #finish, #timer').fadeOut('slow');
     });
     
+    // up-button animation
 
     $('.upbutton').on('click', function(e) {
       e.preventDefault();
@@ -146,31 +148,33 @@ $(document).ready(function(){
     });
 
     const hamburger = document.querySelector('.header__hamburger'),
-      menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close'),
-      closeListElem = document.querySelectorAll('.menu__link');
+          menu = document.querySelector('.menu'),
+          closeElem = document.querySelector('.menu__close'),
+          closeListElem = document.querySelectorAll('.menu__link');
 
-      hamburger.addEventListener('click', () => {
-          menu.classList.add('menu__active');
+    hamburger.addEventListener('click', () => {
+        menu.classList.add('menu__active');
+    });
+
+    closeListElem.forEach(item => {
+      item.addEventListener('click', () => {
+        menu.classList.remove('menu__active');
       });
+    }); 
 
-      closeListElem.forEach(item => {
-        item.addEventListener('click', () => {
-          menu.classList.remove('menu__active');
-        });
-      }); 
+    closeElem.addEventListener('click', () => {
+        menu.classList.remove('menu__active');
+    });
 
-      closeElem.addEventListener('click', () => {
-          menu.classList.remove('menu__active');
-      });
-
-      const timer = setTimeout(function() {
-        $('.overlay, #timer').fadeIn('slow');
-      }, 6000);
+    // const timer = setTimeout(function() {
+    //   $('.overlay, #timer').fadeIn('slow');
+    // }, 10000);
+      
 
   // ***Timer counting the rest time till the end of a scepial offer
 
-  const deadline = '2022-12-20';
+
+  const deadline = '2022-12-31';
 
   function getTimeRemaining(endtime) {
     const difference = Date.parse(endtime) - Date.parse(new Date()),
@@ -188,6 +192,14 @@ $(document).ready(function(){
     }
   }
 
+  function addZero(num) {
+    if (num >= 0 && num < 10) {
+        return `0${num}`;
+    } else {
+        return num;
+    }
+}
+
   function setClockTimer(selector, endtime) {
     const timer = document.querySelector(selector),
           days = timer.querySelector('#days'),
@@ -199,10 +211,10 @@ $(document).ready(function(){
     function updateClockTimer() {
       const total = getTimeRemaining(endtime);
 
-      days.innerHTML = total.days,
-      hours.innerHTML = total.hours,
-      minutes.innerHTML = total.minutes,
-      seconds.innerHTML = total.seconds;
+      days.innerHTML = addZero(total.days),
+      hours.innerHTML = addZero(total.hours),
+      minutes.innerHTML = addZero(total.minutes),
+      seconds.innerHTML = addZero(total.seconds);
 
       if ( total.total <= 0) {
         clearInterval(timeInterval);
@@ -215,22 +227,22 @@ $(document).ready(function(){
 
   // ***Form validation
 
-  const inputTicketNumber = document.querySelector('#ticketNum');
-
-  if (typeof(inputTicketNumber) !== 'number') {
-    $('.tickets__form').validate({
-      rules: {
-        ticketNum: "required",
-        ticketDate: "required",
-        ticketTime: "required"
+  $('.tickets__form').validate({
+    rules: {
+      ticketNum: {
+        required: true,
+        maxlength: 9,
+        minlength: 9
       },
-      messages: {
-        ticketNum: "Wprowadź 9-cyfrowy numer z zakupionego biletu. Dozwolone tylko cyfry.",
-        ticketDate: "Wybierz porządaną datę",
-        ticketTime: "Wybierz porządaną godzinę"
-      }
-    });
-  }
+      ticketDate: "required",
+      ticketTime: "required"
+    },
+    messages: {
+      ticketNum: "Wprowadź 9-cyfrowy numer z zakupionego biletu. Dozwolone tylko cyfry.",
+      ticketDate: "Wybierz porządaną datę",
+      ticketTime: "Wybierz porządaną godzinę"
+    }
+  });
 
 
   $('form').submit(function(e) {
@@ -248,25 +260,7 @@ $(document).ready(function(){
     // return false;
   });
 
-
-  $('.tickets__form').validate({
-    rules: {
-      ticketNum: "required",
-      ticketDate: "required",
-      ticketTime: "required"
-    },
-    messages: {
-      ticketNum: "Wprowadź numer z zakupionego biletu",
-      ticketDate: "Wybierz porządaną datę",
-      ticketTime: "Wybierz porządaną godzinę"
-    }
-  });
-
-  
-
-  
-
-  // alert("Informujemy, iż strona jest w trakcie rozbudowy. Niektóre funkcje mogą nie działać lub mogą nieprawidłowo. Za utrudnienia przepraszamy.");
+  alert("Informujemy, iż strona jest w trakcie rozbudowy. Niektóre funkcje mogą nie działać lub mogą nieprawidłowo. Za utrudnienia przepraszamy.");
 
     //хз шо
     // const dotsDino = document.querySelector('.dinosaurs__dots'),
@@ -282,6 +276,7 @@ $(document).ready(function(){
     //     }
         
     //   });
+
 
 });
 
