@@ -1,7 +1,7 @@
 .tickets {
     min-height: 800px;
     padding: 90px 0;
-    background: url('../../img/bg/form_bg.jpg') center (center/cover) no-repeat;
+    background: url('../img/bg/form_bg.jpg') center (center/cover) no-repeat;
     &__title {
         margin: 0;
         &-reserv {                            
@@ -48,7 +48,7 @@
                     left: 10px;
                     height: 35px;
                     width: 35px;
-                    background: url('../../icons/symbols/vip.png') center center/cover;
+                    background: url('../icons/symbols/vip.png') center center/cover;
                 }
                 &::after {
                     left: 125px;

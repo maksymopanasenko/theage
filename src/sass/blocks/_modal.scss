@@ -39,6 +39,7 @@
             background: rgba(28, 22, 22, 0.749);
         }
         &__title {
+            position: fixed;
             text-align: center;
             font-size: 34px;
             color: $text-color;

@@ -11,10 +11,10 @@ const htmlmin = require('gulp-htmlmin');
 
 gulp.task('server', function() {
     browserSync.init({
-        // server: {
-        //     baseDir: "src"
-        // }
-        proxy: "theage"
+        server: {
+            baseDir: "src"
+        },
+        // proxy: "theage"
     });
 
     gulp.watch('src/*.html').on('change', browserSync.reload);
@@ -36,6 +36,11 @@ gulp.task('styles', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('images', function() {
+    return gulp.src('src/img/**/*')
+        .pipe(gulp.dest('src/img'));
+});
+
 gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
     // gulp.watch('src/*.html').on('change', gulp.parallel('html'));
@@ -49,9 +54,5 @@ gulp.task('watch', function() {
 //         .pipe(gulp.dest("dist/"));
 // });
 
-gulp.task('images', function() {
-    return gulp.src('src/img/**/*')
-        .pipe(gulp.dest('src/img'));
-});
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
