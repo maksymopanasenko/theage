@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-      postData('http://localhost:3000/requests', json)
+      postData('http://localhost:3000/reservations', json)
       .then(data => data.json())
       .then(data => {
         console.log(data);
