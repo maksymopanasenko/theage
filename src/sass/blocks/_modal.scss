@@ -39,7 +39,6 @@
             background: rgba(28, 22, 22, 0.749);
         }
         &__title {
-            position: fixed;
             text-align: center;
             font-size: 34px;
             color: $text-color;
@@ -120,7 +119,7 @@
         }
 
         &__timer {
-            width: 400px;
+            width: 100%;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;

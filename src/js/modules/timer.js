@@ -1,5 +1,5 @@
 function timer() {
-    const deadline = '2023-02-31';
+    const deadline = '2023-05-31';
 
     function getTimeRemaining(endtime) {
       const difference = Date.parse(endtime) - Date.parse(new Date()),

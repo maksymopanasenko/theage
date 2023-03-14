@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const timerStart = setTimeout(function() {
     $('.overlay, #timer').fadeIn('slow');
-  }, 250000);
+  }, 5000);
     
 
   // ***Timer counting the rest time till the end of a scepial offer
