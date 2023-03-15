@@ -136,43 +136,36 @@ document.addEventListener('DOMContentLoaded', () => {
   // });
 
 
-
-
   // server part
 
   const reservationForm = document.querySelector('form');
 
   remainingReservationData(reservationForm);
 
-
   function remainingReservationData(form) {
     form.addEventListener('submit', (e) => {
-      e.preventDefault();
+        e.preventDefault();
 
-      if (!$('form').valid()) {
-        return;
-      }
+        if (!$('form').valid()) {
+          return;
+        }
 
-      const formData = new FormData(form);
+        const formData = new FormData(form);
 
-      const json = JSON.stringify(Object.fromEntries(formData.entries()));
+        const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-      postData('http://localhost:3000/reservations', json)
-      .then(data => data.json())
-      .then(data => {
-        console.log(data);
-        reservat.innerHTML = `Twoja rezerwacja ${data.ticketDate} o godz. ${data.ticketTime} przebiegła pomyślnie. Numer biletu jest numerem Twojej rezerwacji.`;
-        $(this).find("input").val("");
-        $('.overlay, #finish').fadeIn('slow');
+        postData('/', json)
+            .then(data => { 
+                console.log(data);
+                
+                reservat.innerHTML = `Twoja rezerwacja ${data.ticketDate} o godz. ${data.ticketTime} przebiegła pomyślnie. Numer biletu jest numerem Twojej rezerwacji.`;
+                $(this).find("input").val("");
+                $('.overlay, #finish').fadeIn('slow');
 
-        $('form').trigger('reset');
-      });
-    });
-  }
-
-
-
-  alert("Informujemy, iż strona jest w trakcie rozbudowy. Niektóre funkcje mogą nie działać lub mogą nieprawidłowo. Za utrudnienia przepraszamy.");
+                $('form').trigger('reset');
+            });
+        });
+    }
 });
 
 

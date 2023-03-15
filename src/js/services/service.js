@@ -7,7 +7,7 @@ const postData = async (url, data) => {
       body: data
     });
 
-    return response;
+    return response.json();
 }
 
 export default postData;
