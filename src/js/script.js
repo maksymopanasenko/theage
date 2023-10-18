@@ -107,9 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const timerStart = setTimeout(function() {
     $('.overlay, #timer').fadeIn('slow');
   }, 5000);
-    
-
-  // ***Timer counting the rest time till the end of a scepial offer
 
   timer();
 
@@ -118,23 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   formValidation();
-
-
-  // $('form').submit(function(e) {
-  //   e.preventDefault();
-
-  //   if (!$(this).valid()) {
-  //     return;
-  //   }
-
-  //   reservat.innerHTML = `Twoja rezerwacja ${date.value} o godz. ${time.value} przebiegła pomyślnie. Numer biletu jest numerem Twojej rezerwacji.`;
-  //   $(this).find("input").val("");
-  //   $('.overlay, #finish').fadeIn('slow');
-
-  //   $('form').trigger('reset');
-  //   // return false;
-  // });
-
 
   // server part
 
@@ -163,7 +143,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 $('.overlay, #finish').fadeIn('slow');
 
                 $('form').trigger('reset');
-            });
+            })
+            .catch(err => {
+              console.log(err);
+            }) 
         });
     }
 });

@@ -1,5 +1,16 @@
+function calculateDate(n) {
+  const today = new Date(Date.now());
+  today.setDate(today.getDate() + n);
+
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, '0');
+  const day = String(today.getDate()).padStart(2, '0');
+
+  return `${year}-${month}-${day}`;
+}
+
 function timer() {
-    const deadline = '2023-05-31';
+    const deadline = calculateDate(5);
 
     function getTimeRemaining(endtime) {
       const difference = Date.parse(endtime) - Date.parse(new Date()),
